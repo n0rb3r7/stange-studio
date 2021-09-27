@@ -1,14 +1,18 @@
 <template>
-  <article><nuxt-content :document="article" /></article>
+  <article class="container"><nuxt-content :document="work" /></article>
 </template>
 
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('works', params.slug).fetch()
-    return { article }
+    const work = await $content('works', params.slug).fetch()
+    return { work }
   },
 }
 </script>
 
-<style></style>
+<style>
+.nuxt-content img {
+  max-width: 300px;
+}
+</style>
