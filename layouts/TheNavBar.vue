@@ -9,19 +9,17 @@
           />
         </b-navbar-item>
       </template>
-      <template #start>
+      <template #end>
         <b-navbar-item v-for="(item, key) of items" :key="key">
           <NuxtLink :to="item.to" exact-active-class="is-active">
-            {{ item.title }}
+            <b-icon :icon="item.icon" /> {{ item.title }}
           </NuxtLink>
         </b-navbar-item>
-      </template>
-      <template #end>
         <b-navbar-item tag="div">
           <div class="buttons">
-            <a class="button is-primary">
-              <strong>Sign up</strong>
-            </a>
+            <NuxtLink class="button is-primary" to="/contact">
+              <strong>Contacto</strong>
+            </NuxtLink>
           </div>
         </b-navbar-item>
       </template>
@@ -40,8 +38,12 @@ export default {
           to: { name: 'index' },
         },
         {
-          title: 'Inspire',
-          to: { name: 'inspire' },
+          title: 'About',
+          to: { name: 'about' },
+        },
+        {
+          title: 'Works',
+          to: { name: 'works' },
         },
       ],
     }

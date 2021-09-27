@@ -17,3 +17,12 @@ export default {
   },
 }
 </script>
+<style>
+body {
+  background-color: rgb(228, 228, 228);
+  min-height: 100vh;
+}
+p:last-of-type {
+  margin-bottom: 0px;
+}
+</style>
