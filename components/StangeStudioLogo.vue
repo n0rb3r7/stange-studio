@@ -1,6 +1,7 @@
 <template>
   <svg
-    :fill="iconColor"
+    fill="#eee"
+    class="svg"
     :width="width"
     :height="height"
     viewBox="0 0 200 200"
@@ -33,4 +34,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.svg {
+  filter: brightness(1) invert(1);
+}
+</style>
