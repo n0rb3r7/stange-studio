@@ -1,7 +1,7 @@
 <template>
   <svg
     fill="#eee"
-    class="svg"
+    :class="[iconColor ? 'blackIcon' : 'whiteIcon']"
     :width="width"
     :height="height"
     viewBox="0 0 200 200"
@@ -27,15 +27,18 @@ export default {
       default: 18,
     },
     iconColor: {
-      type: String,
-      default: 'black',
+      type: Boolean,
+      default: true,
     },
   },
 }
 </script>
 
 <style>
-.svg {
+.blackIcon {
   filter: brightness(1) invert(1);
+}
+.whiteIcon {
+  filter: brightness(1) invert(0);
 }
 </style>
