@@ -1,21 +1,14 @@
 <template>
-  <section class="section">
-    <div class="columns is-mobile">
-      <card title="Free" icon="github">
-        Open source on <a href="https://github.com/buefy/buefy"> GitHub </a>
-      </card>
-    </div>
-  </section>
+  <div>
+    <section class="section is-medium">
+      <h1 class="title">Medium section</h1>
+      <h2 class="subtitle">
+        A simple container to divide your page into <strong>sections</strong>,
+        like the one you're currently reading.
+      </h2>
+    </section>
+  </div>
 </template>
-
 <script>
-import Card from '~/components/Card'
-
-export default {
-  name: 'HomePage',
-
-  components: {
-    Card,
-  },
-}
+export default {}
 </script>
