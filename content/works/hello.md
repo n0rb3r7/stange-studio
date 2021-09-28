@@ -1,7 +1,7 @@
 ---
-title: My first Blog Post
+title: Mi post de trabajo 1
 description: Learning how to use @nuxt/content to create a blog
-img: drywall-app-stange-studio.webp
+image: drywall-app-stange-studio.webp
 ---
 
 ![alt text](/works-img/drywall-app-stange-studio.webp)

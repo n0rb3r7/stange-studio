@@ -1,5 +1,11 @@
 <template>
-  <article class="container"><nuxt-content :document="work" /></article>
+  <article class="container">
+    <SocialHead
+      :title="work.title"
+      :description="work.description"
+      :image="work.image"
+    /><nuxt-content :document="work" />
+  </article>
 </template>
 
 <script>
