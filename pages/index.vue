@@ -6,6 +6,9 @@
         A simple container to divide your page into <strong>sections</strong>,
         like the one you're currently reading.
       </h2>
+      <a class="waves-effect waves-light btn"
+        ><i class="material-icons right">cloud</i>button</a
+      >
     </section>
   </div>
 </template>

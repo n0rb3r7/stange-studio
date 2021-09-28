@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="section">
     <h1>{{ title }}</h1>
     <div class="works">
       <div class="work" v-for="work of works" :key="work.slug">
