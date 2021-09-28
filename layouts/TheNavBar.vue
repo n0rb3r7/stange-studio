@@ -6,17 +6,16 @@
       </b-navbar-item>
     </template>
     <template #end>
-      <b-navbar-item v-for="(item, key) of items" :key="key">
-        <NuxtLink :to="item.to" exact-active-class="is-active">
-          <span>{{ item.title }}</span>
-        </NuxtLink>
+      <b-navbar-item
+        v-for="(item, key) of items"
+        :key="key"
+        tag="router-link"
+        :to="item.to"
+      >
+        <span>{{ item.title }}</span>
       </b-navbar-item>
-      <b-navbar-item>
-        <div class="buttons">
-          <NuxtLink class="button is-danger" to="/contact">
-            <strong>Contacto</strong>
-          </NuxtLink>
-        </div>
+      <b-navbar-item tag="router-link" to="/contact">
+        <div class="button is-danger"><strong>Contacto</strong></div>
       </b-navbar-item>
     </template>
   </b-navbar>
