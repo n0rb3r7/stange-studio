@@ -1,9 +1,27 @@
 <template>
-  <h1>about</h1>
+  <h1>{{ title }}</h1>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      title: 'Acerca',
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Acerca description',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style></style>
