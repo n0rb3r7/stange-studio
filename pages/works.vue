@@ -1,11 +1,15 @@
 <template>
-  <div class="section">
+  <div class="container">
     <h1>{{ title }}</h1>
     <div class="works">
       <div class="work" v-for="work of works" :key="work.slug">
         <nuxt-link :to="{ name: 'work-slug', params: { slug: work.slug } }">
           <div class="work-inner">
-            <img :src="require(`~/assets/works-img/${work.image}`)" alt="" />
+            <img
+              style="width: 100%"
+              :src="require(`~/assets/works-img/${work.image}`)"
+              alt=""
+            />
             <div class="detail">
               <h3>{{ work.title }}</h3>
               <p>{{ work.description }}</p>

@@ -19,6 +19,6 @@ export default {
 
 <style>
 .nuxt-content img {
-  max-width: 300px;
+  max-width: 100%;
 }
 </style>
