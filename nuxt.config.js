@@ -33,8 +33,6 @@ export default {
     script: [
       {
         src: 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js',
-        async: true,
-        defer: true,
       },
     ],
   },
@@ -53,8 +51,6 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/buefy
-    'nuxt-buefy',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
