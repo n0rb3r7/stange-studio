@@ -1,13 +1,29 @@
 <template>
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
-      The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
-      website content is licensed
-      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-        >CC BY NC SA 4.0</a
-      >.
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">
+            You can use rows and columns here to organize your footer content.
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © {{ currentDate.getFullYear() }} Stange Studio
+        <a
+          class="grey-text text-lighten-4 right"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://nuxtjs.org"
+          >Made with NuxtJS</a
+        >
+      </div>
     </div>
   </footer>
 </template>
@@ -15,11 +31,17 @@
 <script>
 export default {
   name: 'TheFooter',
+  data() {
+    return {
+      currentDate: new Date(),
+    }
+  },
 }
 </script>
 
 <style>
-.footer {
+.page-footer {
+  background-color: rgba(14, 14, 28, 0.95);
   flex: 0;
 }
 </style>
